@@ -14,9 +14,11 @@
     align-items: center;
     justify-content: center;
     color: white;
-
+    cursor: pointer;
     background: linear-gradient(47.64deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
+
+
 #button-2 {
     border-radius: 16rem;
     width: 135px;
@@ -27,5 +29,9 @@
     justify-content: center;
     color: #00FF88;
     border: 1px solid #00FF88;
+    cursor: pointer;
 }
 
+#about-p p{
+    margin-top: 0.2rem;
+}
