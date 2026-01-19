@@ -1,13 +1,65 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <title>TechWave</title>
+
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <header class=" bg-[#1A0B2E] flex flex-col justify-center items-center">
+        <nav class="text-white  w-[80%] m-auto d-flex justify-between p-5">
+            <div class="logo">
+                <img class="" src="./assets/TechWave.png" alt="TechWave logo">
+            </div>
+
+            <ul class="d-flex gap-4">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+            </ul>
+
+            <button id="button">Subscribe <img class="ml-1" src="./assets/ArrowRight.png" alt=""></button>
+        </nav>
+
+        <!-- hero -->
+        <div
+            class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat h-screen w-full text-white flex flex-col items-center justify-center ">
+
+            <div class="absolute ">
+
+                <!-- cercle mic and new -->
+                <div class="flex items-center justify-center">
+                    <!-- new -->
+                    <div class="absolute -mt-82 ml-70">
+                        <img src="./assets/new.png" alt="">
+                    </div>
+                    <div class="cercle">
+                        <img class="w-[26rem]" src="./assets/hero-circle.png" alt="">
+                    </div>
+                    <div class="img absolute">
+                        <img class="h-48" src="./assets/microphone.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-8 text-white w-full gap-6 flex flex-col items-center">
+                    <h1 class="text-6xl font-bold">TechWave</h1>
+                    <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="flex gap-2">
+                        <button id="button" style="width: 12rem;"> <img class="mr-2" src="./assets/spotify.png" alt="">Listen On Sopotify</button>
+
+                        <button id="button-2"><img class="mr-2" src="./assets/clarity_email-line.png" alt="">Subscribe</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
 </body>
+
 </html>
