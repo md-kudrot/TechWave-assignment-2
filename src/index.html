@@ -12,7 +12,7 @@
 
 <body>
     <header class=" bg-[#1A0B2E] flex flex-col justify-center items-center">
-        <nav class="text-white  w-[80%] m-auto d-flex justify-between p-5">
+        <nav class="text-white  w-[80%] m-auto d-flex justify-between sm:p-5 py-5">
             <div class="logo">
                 <img class="" src="./assets/TechWave.png" alt="TechWave logo">
             </div>
@@ -39,47 +39,53 @@
 
         <!-- hero -->
         <div
-            class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat h-screen w-full text-white flex flex-col items-center justify-center ">
+            class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat w-full text-white flex flex-col items-center justify-center ">
+            <div class="h-[60vh] sm:h-[100vh] flex items-center justify-center">
+                <div class="absolute mt-16 sm:mt-0">
 
-            <div class="absolute ">
+                    <!-- cercle mic and new -->
+                    <div class="flex items-center justify-center ">
+                        <!-- new -->
+                        <div class="absolute sm:-mt-82 -mt-44 sm:ml-70 ml-52 ">
+                            <img src="./assets/new.png" alt="">
+                        </div>
+                        <div class="cercle">
+                            <img class="sm:w-[26rem] sm:w-[16rem] w-[15rem]  transform transition-transform duration-[4000ms] ease-in-out
+            hover:rotate-360 hover:scale-80" src="./assets/hero-circle.png" alt="">
+                        </div>
+                        <div class="img absolute">
+                            <img class="sm:h-48 h-24 ransform transition duration-300 ease-in-out
+            hover:scale-110 cursor-pointer" src="./assets/microphone.png" alt="">
+                        </div>
+                    </div>
 
-                <!-- cercle mic and new -->
-                <div class="flex items-center justify-center">
-                    <!-- new -->
-                    <div class="absolute sm:-mt-82 -mt-52 sm:ml-70 ml-52">
-                        <img src="./assets/new.png" alt="">
-                    </div>
-                    <div class="cercle">
-                        <img class="sm:w-[26rem] w-[16rem]" src="./assets/hero-circle.png" alt="">
-                    </div>
-                    <div class="img absolute">
-                        <img class="sm:h-48 h-24" src="./assets/microphone.png" alt="">
+                    <div class="mt-8 text-white text-center w-full gap-6 flex flex-col items-center">
+                        <h1 class="text-6xl font-bold ">TechWave</h1>
+                        <p class="text-[#e0dddd] ">Your daily dose of tech insights, productivity hacks, and personal
+                            growth
+                        </p>
+                        <div class="flex gap-2">
+                            <button id="button" style="width: 12rem;"> <img class="mr-2" src="./assets/spotify.png"
+                                    alt="">Listen On Sopotify</button>
+
+                            <button id="button-2"><img class="mr-2" src="./assets/clarity_email-line.png"
+                                    alt="">Subscribe</button>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="mt-8 text-white text-center w-full gap-6 flex flex-col items-center">
-                    <h1 class="text-6xl font-bold ">TechWave</h1>
-                    <p class="text-[#e0dddd] ">Your daily dose of tech insights, productivity hacks, and personal growth
-                    </p>
-                    <div class="flex gap-2">
-                        <button id="button" style="width: 12rem;"> <img class="mr-2" src="./assets/spotify.png"
-                                alt="">Listen On Sopotify</button>
-
-                        <button id="button-2"><img class="mr-2" src="./assets/clarity_email-line.png"
-                                alt="">Subscribe</button>
-
-                    </div>
-                </div>
             </div>
+
 
         </div>
     </header>
 
 
 
-    <main style="">
+    <main>
         <!-- About -->
-        <section class="bg-[#1A0B2E] flex flex-col items-center">
+        <section class="py-2 bg-[#1A0B2E] flex flex-col items-center">
             <div class="w-[80%] text-white flex flex-col items-center  sm:gap-24  sm:py-16">
                 <div class="flex flex-col items-center gap-2 justify-center sm:w-[50%] text-center">
                     <h1 class="sm:text-6xl text-3xl font-bold">About the Podcast</h1>
@@ -188,9 +194,9 @@
         </section>
 
         <!-- Featured  -->
-        <section class="bg-[#1A0B2E]  d-flex flex-col justify-center py-20">
-            <div class="w-[80%] d-flex justify-center gap-16 text-white flex-col">
-                <h1 class="sm:text-6xl text-4xl font-bold">Featured Episodes</h1>
+        <section class="bg-[#1A0B2E]  d-flex flex-col justify-center py-20 ">
+            <div class="w-[80%] d-flex justify-center gap-16 text-white flex-col ">
+                <h1 class="sm:text-6xl text-3xl font-bold">Featured Episodes</h1>
 
                 <div class="block sm:flex gap-8 items-center justify-center">
 
@@ -216,7 +222,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- cart-1 -->
+                    <!-- cart-2 -->
                     <div class="bg-[#351165] sm:w-[25%] rounded-4xl mt-4 sm:mt-0">
                         <!-- video -->
                         <iframe width="384" height="250" class="rounded-t-4xl"
@@ -238,7 +244,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- cart-1 -->
+                    <!-- cart-3 -->
                     <div class="bg-[#351165] sm:w-[25%] rounded-4xl mt-4 sm:mt-0">
                         <!-- video -->
                         <iframe width="384" height="250" class="rounded-t-4xl"
@@ -302,31 +308,34 @@
 
     <footer>
         <div class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center bg-no-repeat  sm:w-full text-white ">
-            <div class="d-flex flex-col justify-center sm:p-28 p-14 gap-4 sm:gap-10">
 
-                <img class="w-3xs" src="./assets/footer-TechWave (1).png" alt="">
-
-
-                <div class="d-flex sm:gap-16 gap-8 flex-wrap justify-center">
-                    <div class="d-flex gap-2 ">
-                        <img  src="./assets/spotify.png" alt="Sopotify">
-                        <p >Sopotify</p>
+            <div class="h-[10%] flex items-center justify-center">
+                <div class="d-flex flex-col justify-center sm:p-28 p-4 pt-16 gap-4 sm:gap-10 w-[60%]">
+    
+                    <img class="w-[8rem] sm:w-3xs" src="./assets/footer-TechWave (1).png" alt="">
+    
+    
+                    <div class="d-flex sm:gap-16 gap-2 flex-wrap justify-center">
+                        <div class="d-flex gap-2 ">
+                            <img src="./assets/spotify.png" alt="Sopotify">
+                            <p>Sopotify</p>
+                        </div>
+                        <div class="d-flex gap-1 ">
+                            <img src="./assets/apple-podcast.png" alt="Apple Podcasts">
+                            <p ">Apple Podcasts</p>
+                        </div>
+                        <div class=" d-flex gap-2 ">
+                            <img  src=" ./assets/youtube-podcast.png" alt="YouTube">
+                            <p>YouTube</p>
+                        </div>
+                        <div class="d-flex gap-2 ">
+                            <img src="./assets/twitter.png" alt="twitter">
+                            <p>Twitter</p>
+                        </div>
                     </div>
-                    <div class="d-flex gap-1 ">
-                        <img src="./assets/apple-podcast.png" alt="Apple Podcasts">
-                        <p ">Apple Podcasts</p>
-                    </div>
-                    <div class="d-flex gap-2 ">
-                        <img  src="./assets/youtube-podcast.png" alt="YouTube">
-                        <p>YouTube</p>
-                    </div>
-                    <div class="d-flex gap-2 ">
-                        <img  src="./assets/twitter.png" alt="twitter">
-                        <p>Twitter</p>
-                    </div>
+    
+                    <p class="text-[0.7rem]">© 2026 TechWave Podcast. All rights reserved.</p>
                 </div>
-
-                <p class="text-[0.9rem]">© 2026 TechWave Podcast. All rights reserved.</p>
             </div>
         </div>
     </footer>

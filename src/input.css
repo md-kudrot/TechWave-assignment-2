@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+body p{
+    color: #e0dddd;
+}
+
+
+
 .d-flex {
     display: flex;
     align-items: center;
@@ -50,3 +56,8 @@
         
     }
 }
+
+#button:hover {
+    scale:  1.1;
+}
+
