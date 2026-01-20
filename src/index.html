@@ -24,11 +24,15 @@
             </ul>
 
 
-            <!-- <button id="button" class="hidden sm:flex">Subscribe <img class="ml-1" src="./assets/ArrowRight.png" alt=""></button> -->
-            <button id="button" class="hidden sm:flex ">
-                Subscribe
-                <img class="ml-1" src="./assets/ArrowRight.png" alt="">
-            </button>
+            <div class="kk">
+                <button id="button">
+                    Subscribe <img class="ml-1" src="./assets/ArrowRight.png" alt="">
+                </button>
+            </div>
+
+            <div class="sm:hidden">
+                <img src="./assets/hamburger-menu.png" alt="">
+            </div>
 
 
         </nav>
@@ -111,7 +115,8 @@
                         <h1 class="font-bold sm:text-6xl text-2xl text-[#00FF88]">200+</h1>
                         <p class="sm:text-2xl text-sm mt-4">Episodes Published</p>
                     </div>
-                    <div class="text-center">
+
+                    <div class="text-center mr-4">
                         <h1 class="font-bold sm:text-6xl text-2xl text-[#00FF88]">4.9★</h1>
                         <p class="sm:text-2xl text-sm mt-4">Average Rating</p>
                     </div>
@@ -256,32 +261,33 @@
                         </div>
                     </div>
 
-                   
+
                 </div>
             </div>
 
             <!-- Host section -->
             <section class="d-flex flex-col">
-                <h1 class="text-6xl font-bold mt-10 text-white">Meet the Host</h1>
-                <div class="text-white rounded-4xl mt-10 bg-[#351165] d-flex flex-col w-[80%] px-12  justify-center">
+                <h1 class="md:text-6xl text-4xl font-bold mt-10 text-white">Meet the Host</h1>
+                <div class="text-white rounded-4xl mt-10 bg-[#351165] d-flex flex-col w-[80%] sm:px-12  justify-center">
                     <!-- img and text div  -->
-                    <div class="d-flex justify-center gap-10 p-10">
+                    <div
+                        class="sm:flex sm:flex-row flex flex-col items-center m-auto sm:m-0 justify-center gap-10 sm:p-10 p-4">
 
                         <!-- host-img -->
-                        <div class=" w-90 h-60"">
-                             <img  src=" ./assets/host.png" alt="">
+                        <div class=" sm:w-90 w-52 sm:h-60">
+                            <img src=" ./assets/host.png" alt="">
                         </div>
 
                         <!-- text section -->
-                        <div class="">
-                            <h1 class="mb-6 text-5xl font-bold">Alex Kumar</h1>
-                            <p class="mb-6 w-[75%]">
+                        <div class="text-center md:text-left">
+                            <h1 class="mb-6 sm:text-5xl text-2xl font-bold">Alex Kumar</h1>
+                            <p class="mb-6 sm:w-[70%]">
                                 Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech
                                 industry for over 10 years, working with startups and Fortune 500 companies. Through
                                 TechWave, Alex shares insights from industry leaders and practical advice for anyone
                                 looking to grow in tech.
                             </p>
-                            <div class="d-flex gap-4 mb-6">
+                            <div class="d-flex justify-center sm:justify-start sm:gap-4 gap-2  mb-6">
                                 <img src="./assets/roundedLInkedin.png" alt="linkedin">
                                 <img src="./assets/rounded-X.png" alt="x">
                                 <img src="./assets/roundeInsta.png" alt="instagram">
@@ -294,33 +300,33 @@
         </section>
     </main>
 
-    <footer style="display: none;">
-        <div class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center bg-no-repeat  w-full text-white ">
-            <div class="d-flex flex-col justify-center p-28 gap-10">
-                <h1>
-                    <img src="./assets/footer-TechWave (1).png" alt="">
-                </h1>
+    <footer>
+        <div class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center bg-no-repeat  sm:w-full text-white ">
+            <div class="d-flex flex-col justify-center sm:p-28 p-14 gap-4 sm:gap-10">
 
-                <div class="d-flex gap-16">
+                <img class="w-3xs" src="./assets/footer-TechWave (1).png" alt="">
+
+
+                <div class="d-flex sm:gap-16 gap-8 flex-wrap justify-center">
                     <div class="d-flex gap-2 ">
-                        <img src="./assets/spotify.png" alt="Sopotify">
-                        <p>Sopotify</p>
+                        <img  src="./assets/spotify.png" alt="Sopotify">
+                        <p >Sopotify</p>
                     </div>
-                    <div class="d-flex gap-2 ">
+                    <div class="d-flex gap-1 ">
                         <img src="./assets/apple-podcast.png" alt="Apple Podcasts">
-                        <p>Apple Podcasts</p>
+                        <p ">Apple Podcasts</p>
                     </div>
                     <div class="d-flex gap-2 ">
-                        <img src="./assets/youtube-podcast.png" alt="YouTube">
+                        <img  src="./assets/youtube-podcast.png" alt="YouTube">
                         <p>YouTube</p>
                     </div>
                     <div class="d-flex gap-2 ">
-                        <img src="./assets/twitter.png" alt="twitter">
+                        <img  src="./assets/twitter.png" alt="twitter">
                         <p>Twitter</p>
                     </div>
                 </div>
 
-                <p>© 2026 TechWave Podcast. All rights reserved.</p>
+                <p class="text-[0.9rem]">© 2026 TechWave Podcast. All rights reserved.</p>
             </div>
         </div>
     </footer>
