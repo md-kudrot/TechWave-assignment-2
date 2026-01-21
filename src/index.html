@@ -85,7 +85,7 @@
 
     <main>
         <!-- About -->
-        <section class="py-2 bg-[#1A0B2E] flex flex-col items-center">
+        <section class="py-2 pt-24 bg-[#1A0B2E] flex flex-col items-center">
             <div class="w-[80%] text-white flex flex-col items-center  sm:gap-24  sm:py-16">
                 <div class="flex flex-col items-center gap-2 justify-center sm:w-[50%] text-center">
                     <h1 class="sm:text-6xl text-3xl font-bold">About the Podcast</h1>
@@ -201,15 +201,38 @@
                 <div class="block sm:flex gap-8 items-center justify-center">
 
                     <!-- cart-1 -->
-                    <div class="bg-[#351165] sm:w-[25%] rounded-4xl  ">
+                    <div class="bg-[#351165] sm:w-[25%]  rounded-4xl  ">
                         <!-- video -->
-                        <iframe width="384" height="250" class="rounded-t-4xl"
-                            src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="">
+                        <div class="w-full aspect-video rounded-t-4xl overflow-hidden">
+                            <iframe class="w-full h-full"
+                                src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
 
+                        <div class="p-4">
+                            <h1 class="mt-2 font-bold text-[1.5rem] ">The Future of AI in Everyday Life</h1>
+                            <p class="mt-2">Exploring how artificial intelligence is transforming our daily routines and
+                                what to expect in the next decade.
+                            </p>
+                            <p class="mt-2 flex items-center text-green-400 gap-2">
+                                <img src="./assets/clock.png" alt="">
+                                1:51 min
+                            </p>
+                        </div>
+                    </div>
+                    <!-- cart-1 -->
+                    <div class="bg-[#351165] sm:w-[25%] mt-10 sm:mt-0 rounded-4xl  ">
+                        <!-- video -->
+                        <div class="w-full aspect-video rounded-t-4xl overflow-hidden">
+                            <iframe class="w-full h-full"
+                                src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-4">
                             <h1 class="mt-2 font-bold text-[1.5rem] ">The Future of AI in Everyday Life</h1>
@@ -222,16 +245,16 @@
                             </p>
                         </div>
                     </div>
-                    <!-- cart-2 -->
-                    <div class="bg-[#351165] sm:w-[25%] rounded-4xl mt-4 sm:mt-0">
+                    <!-- cart-1 -->
+                    <div class="bg-[#351165] sm:w-[25%] mt-10 sm:mt-0 rounded-4xl  ">
                         <!-- video -->
-                        <iframe width="384" height="250" class="rounded-t-4xl"
-                            src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="">
-
+                        <div class="w-full aspect-video rounded-t-4xl overflow-hidden">
+                            <iframe class="w-full h-full"
+                                src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-4">
                             <h1 class="mt-2 font-bold text-[1.5rem] ">The Future of AI in Everyday Life</h1>
@@ -244,30 +267,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- cart-3 -->
-                    <div class="bg-[#351165] sm:w-[25%] rounded-4xl mt-4 sm:mt-0">
-                        <!-- video -->
-                        <iframe width="384" height="250" class="rounded-t-4xl"
-                            src="https://www.youtube.com/embed/muBBYZXYgoM?si=BMi9mw5HoHPJn9TA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="">
-
-                        </div>
-                        <div class="p-4">
-                            <h1 class="mt-2 font-bold text-[1.5rem] ">The Future of AI in Everyday Life</h1>
-                            <p class="mt-2">Exploring how artificial intelligence is transforming our daily routines and
-                                what to expect in the next decade.
-                            </p>
-                            <p class="mt-2 flex items-center text-green-400 gap-2">
-                                <img src="./assets/clock.png" alt="">
-                                1:51 min
-                            </p>
-                        </div>
-                    </div>
-
-
+                    
                 </div>
             </div>
 
@@ -310,11 +310,11 @@
         <div class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center bg-no-repeat  sm:w-full text-white ">
 
             <div class="h-[10%] flex items-center justify-center">
-                <div class="d-flex flex-col justify-center sm:p-28 p-4 pt-16 gap-4 sm:gap-10 w-[60%]">
-    
+                <div class="d-flex flex-col justify-center sm:p-28 p-4 pt-16 gap-4 sm:gap-10 w-[80%]">
+
                     <img class="w-[8rem] sm:w-3xs" src="./assets/footer-TechWave (1).png" alt="">
-    
-    
+
+
                     <div class="d-flex sm:gap-16 gap-2 flex-wrap justify-center">
                         <div class="d-flex gap-2 ">
                             <img src="./assets/spotify.png" alt="Sopotify">
@@ -333,7 +333,7 @@
                             <p>Twitter</p>
                         </div>
                     </div>
-    
+
                     <p class="text-[0.7rem]">© 2026 TechWave Podcast. All rights reserved.</p>
                 </div>
             </div>
